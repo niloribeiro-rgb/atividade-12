@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/script.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="inputContainer">
+            <label for="aluno">Nome do aluno</label>
+            <input type="text" id="aluno">
+
+            <label for="nota">Nota do aluno</label>
+            <input type="number" id="nota">
+        </div>
+        <div class="buttonContainer">
+            <button type="button" onclick="adAluno(1)">adicionar</button>
+            <button type="button" onclick="adAluno(2)">adicionar no inicio</button>
+            <button onclick="excluirUltimo()">excluir ultimo</button>
+        </div>
+        <div class="listasContainer">
+            <label for="listaAlunos">Lista alunos e suas notas:</label>
+            <ul id="listaAlunos"></ul>
+            <label for="listaNotasCrescente">Ordem crescente das notas:</label>
+            <ul id="listaNotasCrescente"></ul>
+        </div>
+    </main>
+</body>
+
+</html>
